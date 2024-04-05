@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("assets/images/webdeveloper2.jpg");  
+  height: 450px; 
+}
+
+.heading1 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  
+}
+
+
+
+
+.heading2{  
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+}
+
+
+li {
+  font-size: 20px;
+  line-height: 30px;
+}
+

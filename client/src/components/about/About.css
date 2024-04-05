@@ -1,0 +1,56 @@
+.image1 {
+    width: 35%;
+    float: left;
+  }
+  .about 
+  {
+    height: 380px;
+  }
+  .image {
+    /* width: 400px; */
+    padding: 50px 0 0 30px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .details {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding-top: 4em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  p {
+    font-size: 24px;
+  }
+  .contact_detail
+{
+  margin-bottom: 4em;
+ 
+}
+
+@media screen and (max-width: 800px) {
+  .image1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image{
+    padding: 0;
+   
+    margin-top: 1em;
+  }
+  .details {
+    padding: 0 1.5em 0 1.5em;
+    width: 100%;
+  }
+  .about{
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px){
+
+}
