@@ -5,7 +5,7 @@ import { useState ,useEffect} from 'react';
 import './Skills.css';
 const config = {
   //  apiUrl:"https://type.fit/api/quotes",
-  apiUrl: "http://localhost:8082/skills"
+  apiUrl: "https://myportfolio-server-4b2n.onrender.com/"
 }
 const Skills = () => {
   const [url, setUrl] = useState(null)
