@@ -14,7 +14,9 @@ const corsOptions = {
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", FRONT_END_URI);
+  // res.header("Access-Control-Allow-Origin", FRONT_END_URI);
+  res.header("Access-Control-Allow-Origin", "*");
+  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
 
