@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 8080;
 const FRONT_END_URI = process.env.FRONT_END_URI;
 const corsOptions = {
   origin: FRONT_END_URI, // frontend URI (ReactJS)
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200
 };
 app.use(express.json());
 app.use(cors(corsOptions));
