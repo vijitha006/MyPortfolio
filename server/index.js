@@ -9,17 +9,18 @@ const cors = require('cors');
 const PORT = process.env.PORT || 8080;
 const FRONT_END_URI = process.env.FRONT_END_URI;
 const corsOptions = {
-  origin: FRONT_END_URI, // frontend URI (ReactJS)
+  // origin: FRONT_END_URI, // frontend URI (ReactJS)
+  origin: '*',
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 };
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use((req, res, next) => {
-   res.header("Access-Control-Allow-Origin", FRONT_END_URI);
-   res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  // res.header("Access-Control-Allow-Origin", "*");
-  // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  //  res.header("Access-Control-Allow-Origin", FRONT_END_URI);
+  //  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
 
